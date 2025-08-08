@@ -1,0 +1,5 @@
+
+# Pixi env and config
+.pixi/
+pixi.toml
+pixi.lock
