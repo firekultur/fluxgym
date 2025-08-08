@@ -1,0 +1,36 @@
+# Cursor ignore
+# Environments and tooling
+.pixi/
+env/
+.DS_Store
+__pycache__/
+*.pyc
+
+# Backups and local configs
+_backup/
+HF_TOKEN
+
+# Generated and large artifacts
+outputs/
+models/
+datasets/
+security_reports/
+
+# Binary and media files
+*.safetensors
+*.ckpt
+*.pt
+*.bin
+*.sft
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.mp4
+*.mov
+
+# External repos
+sd-scripts/
+
