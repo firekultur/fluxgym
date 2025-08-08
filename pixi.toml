@@ -1,0 +1,56 @@
+ [project]
+ name = "flux_gym"
+ version = "0.1.0"
+ description = "Local FLUX LoRA training UI (Python-only workflow)"
+ channels = ["conda-forge"]
+ platforms = ["osx-64", "osx-arm64"]
+
+ [dependencies]
+ python = "3.11.*"
+
+ # Install pip packages (PEP 508 strings supported)
+ pypi-dependencies = [
+   "safetensors",
+   "diffusers @ git+https://github.com/huggingface/diffusers.git",
+   "gradio_logsview @ https://huggingface.co/spaces/cocktailpeanut/gradio_logsview/resolve/main/gradio_logsview-0.0.17-py3-none-any.whl",
+   "transformers",
+   "lycoris-lora==1.8.3",
+   "flatten_json",
+   "pyyaml",
+   "oyaml",
+   "tensorboard",
+   "kornia",
+   "invisible-watermark",
+   "einops",
+   "accelerate",
+   "toml",
+   "albumentations",
+   "pydantic==2.9.2",
+   "omegaconf",
+   "k-diffusion",
+   "open_clip_torch",
+   "timm",
+   "prodigyopt",
+   "controlnet_aux==0.0.7",
+   "python-dotenv",
+   "bitsandbytes; platform_system != 'Darwin'",
+   "hf_transfer",
+   "lpips",
+   "pytorch_fid",
+   "optimum-quanto",
+   "sentencepiece",
+   "huggingface_hub",
+   "peft",
+   "gradio",
+   "python-slugify",
+   "imagesize",
+   # CPU-friendly PyTorch on macOS will be used by default when not specifying CUDA wheels
+   "torch",
+   "torchvision",
+   "torchaudio",
+ ]
+
+ [tasks]
+ # Per user preference, use `pixi run python3` when invoking this task from the CLI
+ run = "python3 app.py"
+
