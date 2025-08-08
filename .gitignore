@@ -3,3 +3,6 @@
 .pixi/
 pixi.toml
 pixi.lock
+
+# Security scan outputs
+security_reports/
